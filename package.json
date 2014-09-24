@@ -1,14 +1,14 @@
 {
-  "name": "chromecast-osx-audio",
-  "version": "0.0.3",
-  "description": "Stream OS X audio input to a local Chromecast device.",
+  "name": "webcast-osx-audio",
+  "version": "0.0.1",
+  "description": "Stream OS X audio input to an mp3 webcast.",
   "preferGlobal": true,
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
 	"bin": {
-    "chromecast": "./bin/chromecast.js"
+    "webcast-osx": "./bin/webcast.js"
   },
   "os": [
     "darwin"
@@ -17,21 +17,18 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fardog/node-chromecast-osx-audio.git"
+    "url": "https://github.com/fardog/node-webcast-osx-audio.git"
   },
   "keywords": [
     "audio",
     "sound",
     "streaming",
-    "osx",
-    "chromecast"
+    "osx"
   ],
   "dependencies": {
-    "castv2-client": "0.0.2",
     "chalk": "^0.5.1",
     "express": "^4.9.3",
     "lame": "^1.1.1",
-    "mdns": "^2.2.0",
     "minimist": "^1.1.0",
     "osx-audio": "0.1.0"
   }
