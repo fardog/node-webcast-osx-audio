@@ -1,4 +1,4 @@
-# webcast-osx-audio v0.1.0
+# webcast-osx-audio v0.1.1
 
 Streams Mac OS X audio input an mp3 webcast.
 
@@ -43,6 +43,9 @@ Feel free to send pull requests! I'm not picky, but would like the following:
 2. Be sure to point out any changes that break API.
 
 ## History
+
+- **v0.1.1**  
+Updates osx-audio dependency.
 
 - **v0.1.0**  
 First release. Splits from [chromecast-osx-audio](https://github.com/fardog/node-chromecast-osx-audio).
