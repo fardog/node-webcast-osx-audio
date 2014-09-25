@@ -1,44 +1,39 @@
-# chromecast-osx-audio v0.0.3
+# webcast-osx-audio v0.1.0
 
-Streams Mac OS X audio input to a local Chromecast device.
-
-**Note:** This is a very quickly-written first implementation. Consider it a tech-demo more than anything!
+Streams Mac OS X audio input an mp3 webcast.
 
 ## Installation
 
 To install the module for use in your projects:
 
 ```bash
-npm install -g chromecast-osx-audio
+npm install -g webcast-osx-audio
 ```
 
 ## Usage
 
-Global installation exposes the `chromecast` command to your shell. Running this command will start listening to input, and connect to a local Chromecast with a stream of that input.
+Global installation exposes the `webcast-audio` command to your shell. Running this command will start listening to input, and connect to a local Chromecast with a stream of that input.
 
 To direct system audio, use [Soundflower](http://rogueamoeba.com/freebies/soundflower/).
 
 ```bash
-$ chromecast --help
+$ webcast-audio --help
 
-Usage: chromecast [options]
+Usage: webcast-audio [options]
 
 Options:
    -p, --port        The port that the streaming server will listen on.  [3000]
    -b, --bitrate     The bitrate for the mp3 encoded stream.  [192]
    -m, --mono        The stream defaults to stereo. Set to mono with this flag.
-   -s, --samplerate  The sample rate for the mp3 encoded stream  [44100]
-   -n, --name        A name for the server to report itself as.  [Chrome OSX Audio Stream]
+   -s, --samplerate  The sample rate for the mp3 encoded stream.  [44100]
+   -u, --url         The relative URL that the stream will be hosted at.  [stream.mp3]
+   -i, --iface       The public interface that should be reported. Selects the first interface by default.
    --version         print version and exit
 ```
 
-## Environment Variables
-
-None yet.
-
 ## Known Issues
 
-Too early to know.
+- The interface option is only for reporting the IP address that we're listening on, although we're actually listening on all interfaces.
 
 ## Contributing
 
@@ -49,14 +44,8 @@ Feel free to send pull requests! I'm not picky, but would like the following:
 
 ## History
 
-- **v0.0.3**  
-Updates to latest version of osx-audio.
-
-- **v0.0.2**  
-Readme was all wrong. Republished.
-
-- **v0.0.1**  
-Initial Release.
+- **v0.1.0**  
+First release. Splits from [chromecast-osx-audio](https://github.com/fardog/node-chromecast-osx-audio).
 
 ## The MIT License (MIT)
 
