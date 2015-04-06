@@ -1,6 +1,10 @@
-# webcast-osx-audio v0.1.3
+# webcast-osx-audio v0.1.4
 
 Streams Mac OS X audio input an mp3 webcast.
+
+**Note:** webcast-osx-audio depends on packages which only support node
+version [0.10.38](http://nodejs.org/dist/v0.10.38/) or above. This is unlikely
+to change in the near future.
 
 ## Installation
 
