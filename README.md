@@ -1,4 +1,4 @@
-# webcast-osx-audio v0.1.4
+# webcast-osx-audio
 
 Streams Mac OS X audio input an mp3 webcast.
 
