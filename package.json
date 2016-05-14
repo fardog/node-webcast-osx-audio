@@ -1,6 +1,6 @@
 {
   "name": "webcast-osx-audio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Stream OS X audio input to an mp3 webcast.",
   "preferGlobal": true,
   "main": "index.js",
